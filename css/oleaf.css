@@ -441,7 +441,46 @@ nav .navbar .chackbox {
   /* padding-top: 100px; */
   padding-bottom: 100px;
 }
-.our-products-shop .shop .tags {
+@media (max-width: 425px) {
+  .our-products-shop .tags ul {
+    flex-direction: column;
+  }
+}
+.our-products-shop .tags ul li {
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.our-products-shop .tags ul li::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition-duration: 0.5s;
+}
+.our-products-shop .tags ul li.active {
+  position: relative;
+  color: var(--primary-color);
+}
+.our-products-shop .tags ul li:hover {
+  position: relative;
+  color: var(--primary-color);
+}
+.our-products-shop .tags ul li:hover::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 120%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+.our-products-shop .tags ul li.active::after {
+  width: 120%;
 }
 .our-products-shop .shop .products {
   padding-top: 20px;
