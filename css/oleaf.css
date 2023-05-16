@@ -504,18 +504,13 @@ nav .navbar .chackbox {
   border-radius: 10px 0 0 10px;
   text-align: center;
 }
-.our-products-shop
-  .shop
-  .products
-  .product:not(:nth-of-type(2))
-  .select
-  button {
+.our-products-shop .shop .products a:not(:nth-of-type(2)) .select button {
   background-color: var(--primary-color);
   border: none;
   padding: 6px 12px;
   border-radius: 0 10px 10px 0;
 }
-.our-products-shop .shop .products .product:nth-of-type(2) .select button {
+.our-products-shop .shop .products a:nth-of-type(2) .select button {
   background-color: var(--primary-color);
   border: none;
   padding: 6px 1px;
