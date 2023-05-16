@@ -14,8 +14,497 @@
       href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Start NavBar -->
+
+    <nav>
+      <!-- Start SubNavBar -->
+      <div class="sub-nav-bar py-2">
+        <div
+          class="container d-flex flex-column flex-md-row flex-lg-row align-items-center align-items-md-start align-items-lg-start"
+        >
+          <div
+            class="contact d-flex flex-grow-1 flex-column flex-md-row flex-lg-row"
+          >
+            <a href="mailto:contact@oleaf.com" target="_blank">
+              <div
+                class="email d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-regular fa-envelope" style="color: #ffffff"></i>
+                <span class="email text-white ms-2">contact@oleaf.com</span>
+              </div>
+            </a>
+            <a href="tel:123-456-7890" target="_blank">
+              <div
+                class="phone d-flex justify-content-center align-items-center ms-lg-3 my-1 my-lg-0 my-md-0"
+              >
+                <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+                <span class="email text-white ms-2"
+                  >Call Us: (0) 123 456 789</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <div class="info d-flex">
+            <a href="#">
+              <div
+                class="login d-flex justify-content-center align-items-center me-4"
+              >
+                <span class="email text-white me-2 text-uppercase">login</span>
+                <i
+                  class="fa-sharp fas fa-right-to-bracket"
+                  style="color: #ffffff"
+                ></i>
+              </div>
+            </a>
+            <a href="#">
+              <div
+                class="lang d-flex justify-content-center align-items-center me-4"
+              >
+                <select class="select border border-0 text-white">
+                  <option value="1" class="text-black bg-white">FR</option>
+                  <option value="2" class="text-black bg-white">AR</option>
+                </select>
+              </div>
+            </a>
+            <div class="store d-flex justify-content-center align-items-center">
+              <i
+                class="fa-sharp fas fa-cart-shopping"
+                style="color: #ffffff"
+              ></i>
+              <span class="email text-white ms-2">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End SubNavBar -->
+
+      <!-- Start Navbar -->
+      <div class="navbar py-4">
+        <div class="container d-flex align-items-center flex-nowrap">
+          <div class="logo">
+            <img class="rounded" src="images/logo.jpg" alt="" />
+          </div>
+          <div class="chackbox active">
+            <i class="fa-sharp fal fa-bars fa-xl" style="color: #e07282"></i>
+          </div>
+          <div
+            class="links d-flex flex-column flex-md-row flex-lg-row justify-content-end align-items-center gap-3"
+          >
+            <ul
+              class="d-flex flex-column flex-md-row flex-lg-row justify-content-center gap-3 text-uppercase"
+            >
+              <li class="active"><a href="">home</a></li>
+              <li><a href="our-products.html">store</a></li>
+              <li><a href="">academy</a></li>
+              <li><a href="">blog</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">contact</a></li>
+            </ul>
+            <div class="search border border-1 p-2 rounded-2">
+              <input
+                class="border border-0"
+                type="search"
+                name=""
+                id=""
+                placeholder="Search"
+              />
+              <i
+                class="fa-sharp fal fa-magnifying-glass"
+                style="color: #e07282"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar -->
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Single Product information -->
+
+    <div class="single-product-information py-5">
+      <div class="container">
+        <div class="row justify-content-center align-items-center g-5">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="images">
+              <div class="display-img">
+                <img src="" alt="" />
+              </div>
+              <div class="imgs">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-3"
+                >
+                  <img
+                    class="sm-img active"
+                    src="images/Product/plum-beauty-oil-689226_770x.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="sm-img"
+                    src="images/Product/BHApr23_21_740_770x.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="sm-img"
+                    src="images/Product/BHApr23_26_740_770x.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="sm-img"
+                    src="images/Product/plum-beauty-oil-637486_770x.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="sm-img"
+                    src="images/Product/plum-beauty-oil-924001_770x.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="information">
+              <h3 class="category fw-bold text-uppercase">Le Prunier</h3>
+              <h1 class="name fw-bold text-uppercase mb-3">Plum Beauty Oil</h1>
+              <ul class="rating d-flex align-items-center">
+                <li>
+                  <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                </li>
+                <li>
+                  <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                </li>
+                <li>
+                  <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                </li>
+                <li>
+                  <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                </li>
+                <li>
+                  <i class="fa-sharp far fa-star" style="color: #e07282"></i>
+                </li>
+              </ul>
+              <h1 class="price fw-bold mt-3">2500 Da</h1>
+              <h3 class="description-title fw-bold fs-5 mt-3">DESCRIPTION</h3>
+              <p class="description">
+                Le Prunier Plum Beauty Oil is the gold standard of plum oils,
+                grown, pressed, and bottled on-site at the family farm in
+                Northern California. This proprietary seed oil, a by-product
+                from the heirloom organic plum farm offers the ultimate feeling
+                of cushiony softness to skin with an extraordinarily delicate
+                feel. Perfect on its own or in combination with other serums and
+                moisturizers, Le Prunier is a complex blend of superpower plum
+                seed oils packed with antioxidants and essential fatty acids
+                that improve the look of irritation, blemishes, and dullness,
+                while moisturizing with no greasy after-feel. This 100% pure
+                plum oil supports the appearance of a youthful, glowing
+                complexion and makes skin feel silky to the touch. Ideal for all
+                skin types, including mature and sun-damaged.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Single Product information -->
+
+    <!-- Start Single Product Reviews -->
+
+    <div class="reviews my-5">
+      <div class="container">
+        <h2 class="rev-title text-uppercase text-center fw-bold">Reviews</h2>
+        <div class="row justify-content-center g-4 mt-3">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="row justify-content-center align-items-center g-2">
+              <div class="col-12 col-md-6 col-lg-6">
+                <div
+                  class="rating d-flex flex-md-column justify-content-center align-items-center gap-3"
+                >
+                  <span class="number fs-1">4.8</span>
+                  <ul class="rating d-flex align-items-center">
+                    <li>
+                      <i
+                        class="fa-sharp fas fa-star fa-xl"
+                        style="color: #e07282"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-sharp fas fa-star fa-xl"
+                        style="color: #e07282"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-sharp fas fa-star fa-xl"
+                        style="color: #e07282"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-sharp fas fa-star fa-xl"
+                        style="color: #e07282"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fa-sharp fas fa-star fa-xl"
+                        style="color: #e07282"
+                      ></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="rating-detail border-start border-end">
+                  <div
+                    class="star-5 px-3 d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                    <span class="num fw-bold ms-1">5</span>
+                    <div class="prograse">
+                      <span style="width: 80%"></span>
+                    </div>
+                  </div>
+                  <div
+                    class="star-4 px-3 d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                    <span class="num fw-bold ms-1">4</span>
+                    <div class="prograse">
+                      <span style="width: 30%"></span>
+                    </div>
+                  </div>
+                  <div
+                    class="star-3 px-3 d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                    <span class="num fw-bold ms-1">3</span>
+                    <div class="prograse">
+                      <span style="width: 15%"></span>
+                    </div>
+                  </div>
+                  <div
+                    class="star-2 px-3 d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                    <span class="num fw-bold ms-1">2</span>
+                    <div class="prograse">
+                      <span style="width: 8%"></span>
+                    </div>
+                  </div>
+                  <div
+                    class="star-1 px-3 d-flex justify-content-center align-items-center gap-2"
+                  >
+                    <i class="fa-sharp fas fa-star" style="color: #e07282"></i>
+                    <span class="num fw-bold ms-1">1</span>
+                    <div class="prograse">
+                      <span style="width: 2%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-6 d-flex justify-content-md-end justify-content-center gap-3"
+          >
+            <div class="buttons d-flex gap-4 align-items-start">
+              <a class="text-white py-1 px-3 rounded-2" href=""
+                >Write A Review</a
+              >
+              <a class="text-white py-1 px-3 rounded-2" href=""
+                >Ask A Question</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Single Product Reviews -->
+
+    <!-- Start Single Product Reviews comments -->
+    <div class="reviews-comments mb-5">
+      <div class="container">
+        <div class="reviews-comments-head pb-2">
+          <a class="reviews active fw-bold text-black"
+            >Reviews <span class="ms-1">20</span></a
+          >
+          <a class="questions fw-bold ms-2 text-black"
+            >Questions <span class="ms-1">0</span></a
+          >
+        </div>
+        <div class="reviews-body mt-5">
+          <div class="reviews-rating">
+            <ul class="d-flex justify-content-start align-items-center">
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+          <div
+            class="reviews-info d-flex justify-content-start align-items-center gap-2"
+          >
+            <p class="reviewer-name fw-regularfs-6">Katherine V.</p>
+            <p class="reviews-date text-body-secondary fw-regular">4/20/2023</p>
+          </div>
+          <div class="reviews-content">
+            <h3 class="reviews-title fw-bold">GREAT OIL</h3>
+            <p class="reviews-content-p fw-light">
+              Absorbs fast, not sticky, great smell, hydrating & gentle. Love.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-body mt-5">
+          <div class="reviews-rating">
+            <ul class="d-flex justify-content-start align-items-center">
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+          <div
+            class="reviews-info d-flex justify-content-start align-items-center gap-2"
+          >
+            <p class="reviewer-name fw-regularfs-6">Katherine V.</p>
+            <p class="reviews-date text-body-secondary fw-regular">4/20/2023</p>
+          </div>
+          <div class="reviews-content">
+            <h3 class="reviews-title fw-bold">GREAT OIL</h3>
+            <p class="reviews-content-p fw-light">
+              Absorbs fast, not sticky, great smell, hydrating & gentle. Love.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-body mt-5">
+          <div class="reviews-rating">
+            <ul class="d-flex justify-content-start align-items-center">
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+          <div
+            class="reviews-info d-flex justify-content-start align-items-center gap-2"
+          >
+            <p class="reviewer-name fw-regularfs-6">Katherine V.</p>
+            <p class="reviews-date text-body-secondary fw-regular">4/20/2023</p>
+          </div>
+          <div class="reviews-content">
+            <h3 class="reviews-title fw-bold">GREAT OIL</h3>
+            <p class="reviews-content-p fw-light">
+              Absorbs fast, not sticky, great smell, hydrating & gentle. Love.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-body mt-5">
+          <div class="reviews-rating">
+            <ul class="d-flex justify-content-start align-items-center">
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+          <div
+            class="reviews-info d-flex justify-content-start align-items-center gap-2"
+          >
+            <p class="reviewer-name fw-regularfs-6">Katherine V.</p>
+            <p class="reviews-date text-body-secondary fw-regular">4/20/2023</p>
+          </div>
+          <div class="reviews-content">
+            <h3 class="reviews-title fw-bold">GREAT OIL</h3>
+            <p class="reviews-content-p fw-light">
+              Absorbs fast, not sticky, great smell, hydrating & gentle. Love.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-body mt-5">
+          <div class="reviews-rating">
+            <ul class="d-flex justify-content-start align-items-center">
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+              <li><i class="fa-sharp fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+          <div
+            class="reviews-info d-flex justify-content-start align-items-center gap-2"
+          >
+            <p class="reviewer-name fw-regularfs-6">Katherine V.</p>
+            <p class="reviews-date text-body-secondary fw-regular">4/20/2023</p>
+          </div>
+          <div class="reviews-content">
+            <h3 class="reviews-title fw-bold">GREAT OIL</h3>
+            <p class="reviews-content-p fw-light">
+              Absorbs fast, not sticky, great smell, hydrating & gentle. Love.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Single Product Reviews comments-->
+
+    <!-- Start Footer -->
+
+    <div class="footer py-4">
+      <div
+        class="container d-flex align-items-center justify-content-between flex-column flex-md-row"
+      >
+        <p class="copyright mb-0 text-white">
+          Copyright &copy; oleaf.com All rights reserved
+        </p>
+        <ul class="social-media d-flex align-items-center gap-3 mt-3 mt-md-0">
+          <li>
+            <a href=""
+              ><i class="fa-brands fa-facebook" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-brands fa-tiktok" style="color: #ffffff"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- End Footer -->
+
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/oleaf.js"></script>

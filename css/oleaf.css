@@ -660,6 +660,116 @@ nav .navbar .chackbox {
 }
 /* End Store Shope */
 
+/* Start Single Product information */
+
+.single-product-information {
+}
+.single-product-information .images {
+}
+.single-product-information .images .display-img img {
+  width: 70%;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.single-product-information .images .imgs img {
+  width: 80px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .single-product-information .images .imgs img {
+    width: 60px;
+  }
+}
+@media (max-width: 425px) {
+  .single-product-information .images .imgs img {
+    width: 40px;
+  }
+}
+.single-product-information .images .imgs img.active {
+  border-bottom: 3px solid var(--primary-color);
+}
+.single-product-information .information .category {
+  color: var(--primary-color);
+}
+.single-product-information .information .rating ul li i {
+  font-size: 12px;
+}
+.single-product-information .information .description {
+  font-size: 12px;
+}
+/* End Single Product information */
+
+/* Start Single Product Reviews */
+
+.reviews .rating-detail {
+}
+.reviews .rating-detail .num {
+  color: var(--primary-color);
+}
+.reviews .rating-detail .prograse {
+  position: relative;
+  background-color: #ebebeb;
+  width: 100%;
+  height: 5px;
+}
+.reviews .rating-detail .prograse span {
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 5px;
+}
+.reviews .buttons a {
+  background-color: var(--primary-color);
+}
+.reviews .buttons a {
+  background-color: var(--primary-color);
+}
+@media (max-width: 425px) {
+  .reviews .buttons a {
+    font-size: 15px;
+  }
+}
+/* End Single Product Reviews */
+
+/* Start Single Product Reviews comments */
+
+.reviews-comments {
+}
+.reviews-comments .reviews-comments-head {
+  border-bottom: 1px solid #ccc;
+}
+.reviews-comments .reviews-comments-head a {
+  cursor: pointer;
+}
+.reviews-comments .reviews-comments-head .active,
+.reviews-comments .reviews-comments-head a:hover {
+  color: var(--primary-color) !important;
+  position: relative;
+}
+.reviews-comments .reviews-comments-head .active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: -11px;
+  left: 0;
+}
+.reviews-comments .reviews-body {
+  font-family: "Montserrat", sans-serif;
+}
+.reviews-comments .reviews-body:not(:last-of-type) {
+  border-bottom: 1px solid #ccc;
+}
+.reviews-comments .reviews-content .reviews-title {
+  font-size: 20px;
+}
+.reviews-comments .reviews-content .reviews-content-p {
+  font-size: 15px;
+}
+/* End Single Product Reviews comments */
+
 /* Start Footer */
 .footer {
   background-color: var(--primary-color);

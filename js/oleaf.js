@@ -24,3 +24,34 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+var imgs = document.querySelectorAll(
+  ".single-product-information .images .imgs img.sm-img"
+);
+var displayImg = document.querySelector(
+  ".single-product-information .images .display-img img"
+);
+displayImg.src = imgs[0].src;
+
+imgs.forEach((img) => {
+  img.onclick = () => {
+    imgs.forEach((img) => {
+      img.classList.remove("active");
+    });
+    displayImg.src = img.src;
+    img.classList.add("active");
+  };
+});
+
+var buttons = document.querySelectorAll(
+  ".reviews-comments .reviews-comments-head a"
+);
+
+buttons.forEach((button) => {
+  button.onclick = () => {
+    buttons.forEach((button) => {
+      button.classList.remove("active");
+    });
+    button.classList.add("active");
+  };
+});
