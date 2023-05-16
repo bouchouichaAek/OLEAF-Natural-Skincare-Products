@@ -643,18 +643,18 @@ nav .navbar .chackbox {
   border-radius: 10px 0 0 10px;
   text-align: center;
 }
-.store-shope .store .products .product:not(:nth-of-type(2)) .select button {
+.store-shope .store .products .product .select button {
   background-color: var(--primary-color);
   border: none;
   padding: 6px 12px;
   border-radius: 0 10px 10px 0;
 }
-.store-shope .store .products .product:nth-of-type(2) .select button {
+.store-shope .store .products .product .select-witout button {
   background-color: var(--primary-color);
   border: none;
   padding: 6px 1px;
   width: 170px;
-  margin: 0 auto;
+  margin: 26px auto;
   display: block;
   border-radius: 10px;
 }
