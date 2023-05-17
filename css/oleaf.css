@@ -88,7 +88,7 @@ nav .navbar .links ul li a {
   transition-duration: 0.3s;
 }
 nav .navbar .links ul li a:hover,
-nav .navbar .links ul li.active {
+nav .navbar .links ul li a.active {
   color: #e22c47;
 }
 nav .navbar .search {
@@ -424,8 +424,7 @@ nav .navbar .chackbox {
     text-align: center;
   }
 }
-.our-products-category .categories .category {
-}
+
 .our-products-category .categories .category img {
   width: 100%;
 }
@@ -532,10 +531,7 @@ nav .navbar .chackbox {
   background-position: center center;
   background-size: cover;
 }
-.store-landing-page .text {
-}
-.store-landing-page .text .link {
-}
+
 .store-landing-page .text .text-title {
   font-size: 60px;
 }
@@ -543,10 +539,7 @@ nav .navbar .chackbox {
 /* End Store Landing */
 
 /* Start Store Shope */
-.store-shope {
-}
-.store-shope .filter-box {
-}
+
 .store-shope .filter-box .accordion {
   background-color: #fff;
   color: #444;
@@ -563,9 +556,7 @@ nav .navbar .chackbox {
   justify-content: space-between;
   border-top: 1px solid black;
 }
-.store-shope .filter-box .accordion:first-of-type {
-  /* border-bottom: 1px solid black; */
-}
+
 .store-shope .filter-box .accordion:after {
   content: "\2b"; /* Unicode character for "plus" sign (+) */
   font-size: 25px;
@@ -657,10 +648,6 @@ nav .navbar .chackbox {
 
 /* Start Single Product information */
 
-.single-product-information {
-}
-.single-product-information .images {
-}
 .single-product-information .images .display-img img {
   width: 70%;
   margin-bottom: 10px;
@@ -698,8 +685,6 @@ nav .navbar .chackbox {
 
 /* Start Single Product Reviews */
 
-.reviews .rating-detail {
-}
 .reviews .rating-detail .num {
   color: var(--primary-color);
 }
@@ -729,8 +714,6 @@ nav .navbar .chackbox {
 
 /* Start Single Product Reviews comments */
 
-.reviews-comments {
-}
 .reviews-comments .reviews-comments-head {
   border-bottom: 1px solid #ccc;
 }
@@ -764,6 +747,121 @@ nav .navbar .chackbox {
   font-size: 15px;
 }
 /* End Single Product Reviews comments */
+
+/* Start Academy Landing */
+
+.academy-landing {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  background-image: url(../images/academy-landing.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.academy-landing .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(224, 114, 130, 0.3);
+}
+.academy-landing .text-landing {
+  position: relative;
+  width: 700px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 100px auto;
+  font-size: 45px;
+}
+@media (max-width: 425px) {
+  .academy-landing .text-landing {
+    width: 100%;
+    font-size: 35px;
+  }
+}
+
+/* End Academy Landing */
+
+/* Start Courses */
+
+.courses {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.courses .courses-title {
+  margin: 50px auto 30px;
+  width: fit-content;
+  font-size: 40px;
+}
+.courses .courses-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+.courses .courses-box .course {
+  font-family: "Montserrat", sans-serif;
+}
+.courses .courses-box .course img {
+  width: 100%;
+}
+.courses .courses-box .course .course-info span {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.courses .courses-box .course .course-price {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.courses .pagination {
+  margin: 60px auto 20px;
+}
+.courses .pagination ul {
+  margin: 0 auto;
+}
+.courses .pagination ul li .active,
+.courses .pagination ul li a i {
+  color: var(--primary-color) !important ;
+}
+
+/* End Courses */
+
+/* Start Most Viewed Courses */
+.most-viewed-course {
+  margin-bottom: 100px;
+}
+.most-viewed-course .courese-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+.most-viewed-course .courese-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+.most-viewed-course .courese-box .course {
+  font-family: "Montserrat", sans-serif;
+}
+.most-viewed-course .courese-box .course img {
+  width: 100%;
+}
+.most-viewed-course .courese-box .course .course-info span {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.most-viewed-course .courese-box .course .course-price {
+  font-family: inherit;
+  font-weight: 600;
+}
+/* End Most Viewed Courses */
 
 /* Start Footer */
 .footer {

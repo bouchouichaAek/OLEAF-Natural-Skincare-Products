@@ -31,7 +31,10 @@ var imgs = document.querySelectorAll(
 var displayImg = document.querySelector(
   ".single-product-information .images .display-img img"
 );
-displayImg.src = imgs[0].src;
+
+if (window.location.href.endsWith("single-product.html")) {
+  displayImg.src = imgs[0].src;
+}
 
 imgs.forEach((img) => {
   img.onclick = () => {
