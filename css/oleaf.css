@@ -863,6 +863,102 @@ nav .navbar .chackbox {
 }
 /* End Most Viewed Courses */
 
+/* Start Course Inforamtion */
+
+.course-single-info {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  background-image: url(../images/Courses/Course.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.course-single-info .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(224, 114, 130, 0.6);
+}
+
+.course-single-info .img-price-button img {
+  width: 100%;
+}
+.course-single-info .img-price-button .button {
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+/* End Course Inforamtion */
+
+/* Start Course Content */
+.course-content {
+  font-family: "Montserrat", sans-serif;
+}
+
+.course-content .course-content-accordion ul li .accordion-label {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.course-content .course-content-accordion ul li .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.course-content
+  .course-content-accordion
+  ul
+  li
+  input[type="checkbox"]:checked
+  + .content {
+  max-height: 300px;
+}
+.course-content .course-content-info {
+}
+.course-content .course-content-info .course-content-info ul li {
+  list-style: disc;
+}
+.course-content .course-content-info .course-content-info {
+  margin-bottom: 30px;
+}
+
+/* End Course Content */
+
+/* Start Related Courses */
+
+.related-courses .courses-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+.related-courses .courses-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+.related-courses .courses-box .course {
+  font-family: "Montserrat", sans-serif;
+}
+.related-courses .courses-box .course img {
+  width: 100%;
+}
+.related-courses .courses-box .course .course-info span {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.related-courses .courses-box .course .course-price {
+  font-family: inherit;
+  font-weight: 600;
+}
+/* End Related Courses */
+
 /* Start Footer */
 .footer {
   background-color: var(--primary-color);
