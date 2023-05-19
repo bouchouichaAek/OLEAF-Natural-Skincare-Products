@@ -959,6 +959,84 @@ nav .navbar .chackbox {
 }
 /* End Related Courses */
 
+/* Start Blogger Landing */
+
+.blogger-landing {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  background-image: url(../images/blogger.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+.blogger-landing .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(224, 114, 130, 0.6);
+}
+.blogger-landing .blogger-landing-title {
+  position: relative;
+  width: 700px;
+  font-weight: 400;
+  text-align: center;
+  margin: 100px auto;
+  font-size: 45px;
+}
+@media (max-width: 425px) {
+  .blogger-landing .blogger-landing-title {
+    width: 100%;
+    font-size: 35px;
+  }
+}
+
+/* End Blogger Landing */
+
+/* Start Blogger */
+
+.blogger-page {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.blogger-page .blogger-page-title {
+  margin-bottom: 50px;
+}
+
+.blogger-page .blogger-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+.blogger-page .blogger-box .blog img {
+  width: 100%;
+}
+.blogger-page .blogger-box .blog .artical-content {
+  font-size: 12px;
+  border-top: 2px solid var(--primary-color);
+}
+.blogger-page .blogger-box .blog .read-more {
+  background-color: var(--primary-color);
+  font-size: 12px;
+}
+
+.blogger-page .pagination {
+  margin: 60px auto 20px;
+}
+.blogger-page .pagination ul {
+  margin: 0 auto;
+}
+.blogger-page .pagination ul li .active,
+.blogger-page .pagination ul li a i {
+  color: var(--primary-color) !important ;
+}
+/* End Blogger */
+
 /* Start Footer */
 .footer {
   background-color: var(--primary-color);
