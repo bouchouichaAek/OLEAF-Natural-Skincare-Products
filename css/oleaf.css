@@ -1037,6 +1037,19 @@ nav .navbar .chackbox {
 }
 /* End Blogger */
 
+/* Start Single Artical */
+.single-artical {
+  font-family: "Montserrat", sans-serif;
+}
+.single-artical .artical img {
+  width: 100%;
+  margin: 20px 0;
+}
+.single-artical .trending-posts img {
+  width: 100px;
+}
+/* End Single Artical */
+
 /* Start Footer */
 .footer {
   background-color: var(--primary-color);
