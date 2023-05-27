@@ -58,3 +58,76 @@ buttons.forEach((button) => {
     button.classList.add("active");
   };
 });
+
+var allChecks = document.querySelectorAll(".table-responsive table th input");
+var CheckBoxes = document.querySelectorAll(
+  ".table-responsive table input[type='checkbox']"
+);
+
+allChecks.forEach((allCheck) => {
+  allCheck.onclick = function () {
+    CheckBoxes.forEach((CheckBoxe) => {
+      if (
+        CheckBoxe.classList.contains(allCheck.dataset.filter) &&
+        allCheck.checked
+      ) {
+        CheckBoxe.checked = true;
+      } else {
+        CheckBoxe.checked = false;
+      }
+    });
+  };
+});
+
+var allTab = document.querySelectorAll(".section.dashboard .tabs .tab");
+var tabsList = document.querySelectorAll(".section.dashboard .tabs-list ul li");
+
+tabsList.forEach((link) => {
+  link.onclick = (e) => {
+    tabsList.forEach((link) => {
+      link.classList.remove("active");
+    });
+    e.target.classList.add("active");
+    allTab.forEach((tab) => {
+      tab.classList.add("d-none");
+      if (tab.dataset.set == e.target.textContent) {
+        tab.classList.remove("d-none");
+      }
+    });
+  };
+});
+
+var sectionLinks = document.querySelectorAll(".account .account-nav ul li");
+var sections = document.querySelectorAll(".sections .section");
+
+sectionLinks.forEach((sectionLink) => {
+  sectionLink.onclick = (e) => {
+    sectionLinks.forEach((sectionLink) => {
+      sectionLink.classList.remove("active");
+    });
+    sectionLink.classList.add("active");
+    sections.forEach((section) => {
+      section.classList.add("d-none");
+      if (section.dataset.set == e.target.textContent) {
+        section.classList.remove("d-none");
+      }
+    });
+  };
+});
+
+var editInfobtns = document.querySelectorAll(
+  ".account .section.profile .profile-info .info form input[type='submit']"
+);
+editInfobtns.forEach((btn) => {
+  btn.onclick = (e) => {
+    if (btn.previousElementSibling.disabled == true) {
+      e.preventDefault();
+      btn.previousElementSibling.disabled = false;
+      btn.value = "save";
+    } else {
+      btn.previousElementSibling.disabled = true;
+      btn.value = "edit";
+      e.stopPropagation();
+    }
+  };
+});

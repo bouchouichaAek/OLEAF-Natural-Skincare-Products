@@ -1050,6 +1050,456 @@ nav .navbar .chackbox {
 }
 /* End Single Artical */
 
+/* Start About Us */
+
+.about-us img {
+  width: 100%;
+}
+.about-us .company-desc {
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .about-us {
+    text-align: center;
+  }
+}
+/* End About Us */
+
+/* Start Our Values */
+.our-values {
+}
+.our-values .values {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+.our-values .value {
+  font-family: "Montserrat", sans-serif;
+}
+.our-values .value .value-title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+.our-values .value .value-title::before {
+  position: absolute;
+  content: "";
+  width: 95%;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.our-values .value .value-title::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: rotate(45deg);
+}
+
+.our-values .value .value-desc {
+  width: 60%;
+  margin: 20px auto 0;
+}
+/* End Our Values */
+
+/* Start contact Information */
+
+.contact-info {
+}
+.contact-info .contact-info-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+.contact-info .contact-info-box .contact-infomation {
+}
+.contact-info .contact-info-box .contact-infomation .fa-location-dot {
+  font-size: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+.contact-info .contact-info-box .contact-infomation .fa-phone,
+.contact-info .contact-info-box .contact-infomation .fa-envelope {
+  font-size: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  padding: 35px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+.contact-info .contact-info-box .contact-infomation .contact-infomation-title {
+  color: var(--primary-color);
+}
+/* End contact Information */
+
+/* Start MAP */
+.map iframe {
+  width: 100%;
+  height: 450px;
+}
+
+/* End MAP */
+
+/* Start Form Send Message */
+.send-message {
+  font-family: "Montserrat", sans-serif;
+}
+.send-message .text {
+  width: 550px;
+  margin: 0 auto;
+}
+@media (max-width: 425px) {
+  .send-message .text {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.send-message .contact {
+  font-family: initial;
+  width: 500px;
+  margin: 40px auto 20px;
+}
+@media (max-width: 425px) {
+  .send-message .contact {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.send-message textarea {
+  resize: none;
+  height: 150px;
+}
+
+.send-message input[type="submit"] {
+  width: 50%;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+/* End Form Send Message */
+
+/* Start Account */
+.account {
+}
+.account .account-nav {
+  background-color: var(--primary-color);
+}
+.account .account-nav ul {
+}
+.account .account-nav ul li {
+  position: relative;
+  /* overflow: hidden; */
+  cursor: pointer;
+}
+.account .account-nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: white;
+  transition-duration: 0.3s;
+}
+.account .account-nav ul li.active::after {
+  width: 100%;
+}
+.account .account-nav ul li:hover:after {
+  width: 100%;
+}
+
+.account .section.dashboard .tabs-list ul {
+  width: fit-content;
+}
+@media (max-width: 425px) {
+  .account .section.dashboard .tabs-list ul {
+    border: none !important;
+    margin: 0 auto;
+  }
+  .account .section.dashboard .section-title {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+.account .section.dashboard .tabs-list ul li {
+  cursor: pointer;
+  padding: 5px 10px;
+  transition-duration: 0.3s;
+}
+
+.account .section.dashboard .tabs-list ul li:hover,
+.account .section.dashboard .tabs-list ul li.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.account .section.dashboard .tabs .tab form select {
+  width: 250px;
+  height: 25px;
+  background-color: transparent;
+  text-transform: capitalize;
+}
+
+.account .section.dashboard .tabs .tab > form input {
+  width: 40px;
+  height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+.account .section.dashboard .tabs .tab table {
+  font-family: "Montserrat", sans-serif;
+  height: 373px;
+  overflow: scroll;
+}
+@media (max-width: 425px) {
+  .account .section.dashboard .tabs .tab table {
+    width: 100%;
+    overflow: scroll;
+  }
+}
+.account .section.dashboard .tabs .tab table th {
+  font-size: 13px;
+}
+.account .section.dashboard .tabs .tab table td {
+  font-size: 13px;
+  padding-bottom: 3px;
+  padding-top: 5px;
+
+  width: fit-content;
+}
+.account .section.dashboard .tabs .tab table td form input {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.account .section.profile .profile-info .info form {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 425px) {
+  .account .section.profile .profile-info .info {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 425px) {
+  .account .section.profile .profile-info .info form {
+    flex-direction: column;
+  }
+}
+.account .section.profile .profile-info .info form input[type="text"],
+.account .section.profile .profile-info .info form input[type="password"],
+.account .section.profile .profile-info .info form input[type="email"] {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (max-width: 425px) {
+  .account .section.profile .profile-info .info form input[type="text"],
+  .account .section.profile .profile-info .info form input[type="password"],
+  .account .section.profile .profile-info .info form input[type="email"] {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.account .section.profile .profile-info img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+@media (max-width: 425px) {
+  .account .section.profile .profile-info img {
+    width: 100%;
+  }
+}
+.account .section.profile .profile-info .info form label {
+  width: 100px;
+}
+@media (max-width: 425px) {
+  .account .section.profile .profile-info .info form label {
+    width: 100%;
+  }
+}
+.account .section.profile .profile-info .info form input[type="submit"] {
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+@media (max-width: 425px) {
+  .account .section.profile .profile-info .info form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+.account .section.orders .products {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.account .section.orders .products .product img {
+  width: 100%;
+}
+.account .section.orders .products .product .product-category {
+  font-size: 13px;
+}
+.account .section.orders .products .product .product-name {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: -10px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.account .section.orders .products .product .product-desc {
+  font-size: 14px;
+}
+.account .section.orders .products .product .product-price {
+  font-size: 13px;
+}
+.account .section.orders .pagination {
+  margin: 60px auto 20px;
+}
+.account .section.orders .pagination ul {
+  margin: 0 auto;
+}
+.account .section.orders .pagination ul li .active,
+.account .section.orders .pagination ul li a i {
+  color: var(--primary-color) !important ;
+}
+
+.account .section.cousres .courses-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+}
+.account .section.cousres .courses-box .course {
+  font-family: "Montserrat", sans-serif;
+}
+.account .section.cousres .courses-box .course img {
+  width: 100%;
+}
+.account .section.cousres .courses-box .course .course-info span {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.account .section.cousres .courses-box .course .course-price {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.account .section.cousres .pagination {
+  margin: 60px auto 20px;
+}
+.account .section.cousres .pagination ul {
+  margin: 0 auto;
+}
+.account .section.cousres .pagination ul li .active,
+.account .section.cousres .pagination ul li a .fa-angle-right {
+  color: var(--primary-color) !important ;
+}
+
+.account .section.bloggers .blogger-box {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+.account .section.bloggers .blogger-box .blog img {
+  width: 100%;
+}
+.account .section.bloggers .blogger-box .blog .artical-content {
+  font-size: 12px;
+  border-top: 2px solid var(--primary-color);
+}
+.account .section.bloggers .blogger-box .blog .read-more {
+  background-color: var(--primary-color);
+  font-size: 12px;
+}
+
+.account .section.bloggers .pagination {
+  margin: 60px auto 20px;
+}
+.account .section.bloggers .pagination ul {
+  margin: 0 auto;
+}
+.account .section.bloggers .pagination ul li .active,
+.account .section.bloggers .pagination ul li a i {
+  color: var(--primary-color) !important ;
+}
+
+/* End Account */
+
+/* Start 404 Page */
+.page-404 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+}
+.page-404 img {
+  margin-top: -30px;
+}
+@media (max-width: 425px) {
+  .page-404 img {
+    width: 100%;
+  }
+}
+.page-404 .text {
+  margin-top: -30px;
+  line-height: 0.8;
+}
+@media (max-width: 425px) {
+  .page-404 .text {
+    margin-top: -20px;
+    line-height: 1.5;
+    font-size: 15px !important;
+  }
+}
+.page-404 a {
+  background-color: var(--primary-color);
+  width: 300px;
+  font-size: 20px;
+}
+@media (max-width: 425px) {
+  .page-404 a {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+/* End 404 Page */
+
 /* Start Footer */
 .footer {
   background-color: var(--primary-color);

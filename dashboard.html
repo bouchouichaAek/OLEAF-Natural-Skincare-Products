@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - OLEAF - Natural Skincare Products</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/oleaf.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Start NavBar -->
+
+    <nav>
+        <!-- Start SubNavBar -->
+        <div class="sub-nav-bar py-2">
+            <div
+                class="container d-flex flex-column flex-md-row flex-lg-row align-items-center align-items-md-start align-items-lg-start">
+                <div class="contact d-flex flex-grow-1 flex-column flex-md-row flex-lg-row">
+                    <a href="mailto:contact@oleaf.com" target="_blank">
+                        <div class="email d-flex justify-content-center align-items-center">
+                            <i class="fa-regular fa-envelope" style="color: #ffffff"></i>
+                            <span class="email text-white ms-2">contact@oleaf.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:123-456-7890" target="_blank">
+                        <div
+                            class="phone d-flex justify-content-center align-items-center ms-lg-3 my-1 my-lg-0 my-md-0">
+                            <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+                            <span class="email text-white ms-2">Call Us: (0) 123 456 789</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="info d-flex">
+                    <a href="#">
+                        <div class="login d-flex justify-content-center align-items-center me-4">
+                            <span class="email text-white me-2 text-uppercase">login</span>
+                            <i class="fa-sharp fas fa-right-to-bracket" style="color: #ffffff"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="lang d-flex justify-content-center align-items-center me-4">
+                            <select class="select border border-0 text-white">
+                                <option value="1" class="text-black bg-white">FR</option>
+                                <option value="2" class="text-black bg-white">AR</option>
+                            </select>
+                        </div>
+                    </a>
+                    <div class="store d-flex justify-content-center align-items-center">
+                        <i class="fa-sharp fas fa-cart-shopping" style="color: #ffffff"></i>
+                        <span class="email text-white ms-2">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End SubNavBar -->
+
+        <!-- Start Navbar -->
+        <div class="navbar py-4">
+            <div class="container d-flex align-items-center flex-nowrap">
+                <div class="logo">
+                    <img class="rounded" src="images/logo.jpg" alt="" />
+                </div>
+                <div class="chackbox active">
+                    <i class="fa-sharp fal fa-bars fa-xl" style="color: #e07282"></i>
+                </div>
+                <div
+                    class="links d-flex flex-column flex-md-row flex-lg-row justify-content-end align-items-center gap-3">
+                    <ul class="d-flex flex-column flex-md-row flex-lg-row justify-content-center gap-3 text-uppercase">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="our-products.html">store</a></li>
+                        <li><a href="academy.html">academy</a></li>
+                        <li><a href="blogger.html">blog</a></li>
+                        <li><a class="active" href="about-us.html">about</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                    <div class="search border border-1 p-2 rounded-2">
+                        <input class="border border-0" type="search" name="" id="" placeholder="Search" />
+                        <i class="fa-sharp fal fa-magnifying-glass" style="color: #e07282"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar -->
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Account -->
+    <div class="account mb-4">
+        <div class="account-nav py-3">
+            <div class="container">
+                <ul class="d-flex flex-column flex-md-row justify-content-start align-items-center gap-3">
+                    <li class="active text-uppercase text-white fw-bold fs-6">dashboard</li>
+                    <li class="text-uppercase text-white fw-bold fs-6">profile</li>
+                    <li class="text-uppercase text-white fw-bold fs-6">orders</li>
+                    <li class="text-uppercase text-white fw-bold fs-6">cousres</li>
+                    <li class="text-uppercase text-white fw-bold fs-6">blogger</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="container">
+                <div class="section dashboard" data-set="dashboard">
+                    <h3 class="section-title text-uppercase my-4 fw-bold fs-2">admin dashboard</h3>
+                    <div class="tabs-list mb-5">
+                        <ul
+                            class="d-flex flex-column flex-md-row justify-content-start align-items-center  border border-1">
+                            <li class="active text-uppercase  fw-bold fs-6">users</li>
+                            <li class="text-uppercase  fw-bold fs-6">groups</li>
+                            <li class="text-uppercase  fw-bold fs-6">products</li>
+                            <li class="text-uppercase  fw-bold fs-6">courses</li>
+                            <li class="text-uppercase  fw-bold fs-6">blogger</li>
+                        </ul>
+                    </div>
+                    <div class="tabs">
+                        <div class="tab users" data-set="users">
+                            <form class="action-form d-flex justify-content-start align-items-center gap-1" action="">
+                                <label class="text-capitalize fw-bold" for="action">action</label>
+                                <select class="rounded-2" name="action" id="action">
+                                    <option value="">-------</option>
+                                    <option class="text-capitalize" value="">delete seleted users</option>
+                                </select>
+                                <input class="fw-bold rounded-2" type="submit" value="Go">
+                            </form>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover mt-4 text-center table-bordered">
+                                    <th><input class="users" data-filter="users" type="checkbox" name="" id=""></th>
+                                    <th class="text-uppercase ">Firstname</th>
+                                    <th class="text-uppercase ">Lastname</th>
+                                    <th class="text-uppercase ">Username</th>
+                                    <th class="text-uppercase " class="text-uppercase">Groups</th>
+                                    <th class="text-uppercase ">Email</th>
+                                    <th class="text-uppercase ">Edit</th>
+                                    <th class="text-uppercase ">Delete</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="users" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">BOUCHOUCIHA</td>
+                                        <td class="text-uppercase ">Abdelkader</td>
+                                        <td class="text-uppercase ">aek97</td>
+                                        <td class="text-uppercase ">ADmins</td>
+                                        <td class="text-uppercase ">BOUCHOUICHAAEK97@GMaiL.COM</td>
+                                        <td class="text-uppercase ">
+                                            <form action="">
+                                                <input type="submit" value="Edit">
+                                            </form>
+                                        </td>
+                                        <td class="">
+                                            <form action="">
+                                                <input class="" type="submit" value="DELETE">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab groups d-none" data-set="groups">
+                            <form class="action-form d-flex justify-content-start align-items-center gap-1" action="">
+                                <label class="text-capitalize fw-bold" for="action">action</label>
+                                <select class="rounded-2" name="action" id="action">
+                                    <option value="">-------</option>
+                                    <option class="text-capitalize" value="">delete seleted Groups</option>
+                                </select>
+                                <input class="fw-bold rounded-2" type="submit" value="Go">
+                            </form>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover mt-4 text-center table-bordered">
+                                    <th><input class="groups" type="checkbox" name="" id="" data-filter="groups"></th>
+                                    <th class="text-uppercase ">Groups</th>
+                                    <th class="text-uppercase ">Groups members</th>
+                                    <th class="text-uppercase ">groups permissions</th>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="groups" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">admins</td>
+                                        <td class="groubs-members text-uppercase text-start">
+                                            <ul>
+                                                <li>bouchouicha abdelkader</li>
+                                                <li>maisaa aziza</li>
+                                            </ul>
+                                        </td>
+                                        <td class="groubs-permissions text-uppercase text-start ">
+                                            <ul>
+                                                <li>add new products</li>
+                                                <li>delete products</li>
+                                                <li>edit products</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="groups" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">admins</td>
+                                        <td class="groubs-members text-uppercase text-start">
+                                            <ul>
+                                                <li>bouchouicha abdelkader</li>
+                                                <li>maisaa aziza</li>
+                                            </ul>
+                                        </td>
+                                        <td class="groubs-permissions text-uppercase text-start ">
+                                            <ul>
+                                                <li>add new products</li>
+                                                <li>delete products</li>
+                                                <li>edit products</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="groups" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">admins</td>
+                                        <td class="groubs-members text-uppercase text-start">
+                                            <ul>
+                                                <li>bouchouicha abdelkader</li>
+                                                <li>maisaa aziza</li>
+                                            </ul>
+                                        </td>
+                                        <td class="groubs-permissions text-uppercase text-start ">
+                                            <ul>
+                                                <li>add new products</li>
+                                                <li>delete products</li>
+                                                <li>edit products</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase "><input class="groups" type="checkbox" name="" id="">
+                                        </td>
+                                        <td class="text-uppercase ">admins</td>
+                                        <td class="groubs-members text-uppercase text-start">
+                                            <ul>
+                                                <li>bouchouicha abdelkader</li>
+                                                <li>maisaa aziza</li>
+                                            </ul>
+                                        </td>
+                                        <td class="groubs-permissions text-uppercase text-start ">
+                                            <ul>
+                                                <li>add new products</li>
+                                                <li>delete products</li>
+                                                <li>edit products</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab products d-none" data-set="products"></div>
+                        <div class="tab courses d-none" data-set="courses"></div>
+                        <div class="tab blogger d-none" data-set="blogger"></div>
+                    </div>
+                </div>
+                <div class="section profile d-none" data-set="profile">
+                    <h3 class="section-title text-uppercase my-4 fw-bold fs-2">MY PROFILE</h3>
+                    <div class="profile-info">
+                        <div class="row justify-content-center align-items-center g-2 g-md-5 g-lg-5">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="info">
+                                    <div class="username">
+                                        <form action="">
+                                            <label class="text-capitalize fw-bold" for="username">username :</label>
+                                            <input class="text-lowercase" type="text" name="username" id="username"
+                                                value="Aek97" disabled>
+                                            <input class="text-capitalize" type="submit" value="edit">
+                                        </form>
+                                    </div>
+                                    <div class="password">
+                                        <form action="">
+                                            <label class="text-capitalize fw-bold" for="password">password :</label>
+                                            <input class="text-capitalize" type="password" name="password" id="password"
+                                                value="45d2297a7c343152dab4f5f8941005c6" disabled>
+                                            <input class="text-capitalize" type="submit" value="edit">
+                                        </form>
+
+                                    </div>
+                                    <div class="firstname">
+                                        <form action="">
+                                            <label class="text-capitalize fw-bold" for="firstname">firstname :</label>
+                                            <input class="text-capitalize" type="text" name="firstname" id="firstname"
+                                                value="bouchouicha" disabled>
+                                            <input class="text-capitalize" type="submit" value="edit">
+
+                                        </form>
+                                    </div>
+                                    <div class="lasttname">
+                                        <form action="">
+                                            <label class="text-capitalize fw-bold" for="lasttname">lasttname :</label>
+                                            <input class="text-capitalize" type="text" name="lasttname" id="lasttname"
+                                                value="Abdelkader" disabled>
+                                            <input class="text-capitalize" type="submit" value="edit">
+
+                                        </form>
+                                    </div>
+                                    <div class="email">
+                                        <form action="">
+                                            <label class="text-capitalize fw-bold" for="email">email :</label>
+                                            <input class="text-lowercase" type="email" name="email" id="email"
+                                                value="bouchouichaaek97@gmail.com" disabled>
+                                            <input class="text-capitalize" type="submit" value="edit">
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <img src="images/no picture profile.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section orders d-none" data-set="orders">
+                    <h3 class="section-title text-uppercase my-4 fw-bold fs-2">MY Orders</h3>
+                    <div class="products">
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-13.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">ALPYN BEAUTY</p>
+                                <h1 class="product-name text-black">Pore Perfecting Liquid</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">1000 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-6.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">AYUNA</p>
+                                <h1 class="product-name text-black">Eye Serum</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">1500 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-7.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">NINI Organics</p>
+                                <h1 class="product-name text-black">Rosé Face Mist</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">2000 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-13.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">ALPYN BEAUTY</p>
+                                <h1 class="product-name text-black">Pore Perfecting Liquid</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">1000 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-6.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">AYUNA</p>
+                                <h1 class="product-name text-black">Eye Serum</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">1500 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-7.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">NINI Organics</p>
+                                <h1 class="product-name text-black">Rosé Face Mist</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">2000 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-13.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">ALPYN BEAUTY</p>
+                                <h1 class="product-name text-black">Pore Perfecting Liquid</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">1000 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-6.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">AYUNA</p>
+                                <h1 class="product-name text-black">Eye Serum</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">1500 DA</span>
+                            </div>
+                        </a>
+                        <a href="single-product.html" target="_blank">
+                            <div class="product">
+                                <img src="images/Product/Product-7.jpg" alt="" />
+                                <p class="product-category pt-2 text-black">NINI Organics</p>
+                                <h1 class="product-name text-black">Rosé Face Mist</h1>
+                                <p class="product-desc text-black-50">
+                                    A leave-on liquid exfoliator designed to brighten and support
+                                    evening out skin tone and texture. A 2% salicylic acid
+                                    concentration will help pores appear diminished while dissolving
+                                    excess oil.
+                                </p>
+                                <span class="product-price text-black-50">2000 DA</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pagination">
+                        <ul class="d-flex justify-content-center align-items-center gap-2">
+                            <li><a class="text-black fw-bold active" href="">1</a></li>
+                            <li><a class="text-black fw-bold" href="">2</a></li>
+                            <li><a class="text-black fw-bold" href="">3</a></li>
+                            <li><a class="text-black fw-bold" href="">4</a></li>
+                            <li><a class="text-black fw-bold" href="">5</a></li>
+                            <li><a class="text-black fw-bold" href="">6</a></li>
+                            <li><a class="text-black fw-bold" href="">...</a></li>
+                            <li><a class="text-black fw-bold" href="">10</a></li>
+                            <li>
+                                <a class="text-black fw-bold" href=""><i class="fa-sharp fas fa-angle-right"
+                                        style="color: #e07282"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section cousres d-none" data-set="cousres">
+                    <h3 class="section-title text-uppercase my-4 fw-bold fs-2">MY COUSRES</h3>
+                    <div class="courses-box">
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                        <a class="text-black" href="single-course.html">
+                            <div class="course">
+                                <img src="images/Courses/Course.jpeg" alt="" srcset="" />
+                                <div class="course-info d-flex justify-content-between align-items-center">
+                                    <span class="text-uppercase">17,525 students</span>
+                                    <span class="text-uppercase">4h50M</span>
+                                </div>
+                                <h3 class="course-title text-uppercase fs-5 fw-medium mt-2">
+                                    Making Natural Skincare Products
+                                </h3>
+                                <ul class="course-rating d-flex align-items-center">
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp fas fa-star" style="color: #e59819"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-sharp far fa-star" style="color: #e59819"></i>
+                                    </li>
+                                </ul>
+                                <h3 class="course-price text-uppercase fs-5">12000.00 DA</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="pagination">
+                        <ul class="d-flex justify-content-center align-items-center gap-2">
+                            <li><a class="text-black fw-bold active" href="">1</a></li>
+                            <li><a class="text-black fw-bold" href="">2</a></li>
+                            <li><a class="text-black fw-bold" href="">3</a></li>
+                            <li><a class="text-black fw-bold" href="">4</a></li>
+                            <li><a class="text-black fw-bold" href="">5</a></li>
+                            <li><a class="text-black fw-bold" href="">6</a></li>
+                            <li><a class="text-black fw-bold" href="">...</a></li>
+                            <li><a class="text-black fw-bold" href="">20</a></li>
+                            <li>
+                                <a class="text-black fw-bold" href=""><i class="fa-solid fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section bloggers d-none" data-set="blogger">
+                    <h3 class="section-title text-uppercase my-4 fw-bold fs-2">MY BLOGGER</h3>
+                    <div class="blogger-box">
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                        <div class="blog">
+                            <a href="single-artical.html" target="_blank">
+                                <img src="images/blogger/blog-1.webp" alt="" />
+                                <p class="articale-date text-black text-uppercase fs-6 mb-0 mt-2">
+                                    MAR 3, 2021
+                                </p>
+                                <h1 class="artical-title text-black fs-2 fw-bold mb-4">
+                                    The Fol Effect
+                                </h1>
+                                <p class="artical-content text-black-50 pt-2">
+                                    Whether from stress, hormones, aging or illness, hair thinning,
+                                    and hair loss can happen to anyone. While hair naturally goes
+                                    through cycles of increased shedding, if you’re finding more
+                                    than your fair share in your brush or shower basin, it may be
+                                    time for a Fol-on intervention. Today we’r...
+                                </p>
+                                <a href="" class="read-more text-white px-2 py-1 text-uppercase">read more</a>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <ul class="d-flex justify-content-center align-items-center gap-2">
+                            <li><a class="text-black fw-bold active" href="">1</a></li>
+                            <li><a class="text-black fw-bold" href="">2</a></li>
+                            <li><a class="text-black fw-bold" href="">3</a></li>
+                            <li><a class="text-black fw-bold" href="">4</a></li>
+                            <li><a class="text-black fw-bold" href="">5</a></li>
+                            <li><a class="text-black fw-bold" href="">6</a></li>
+                            <li><a class="text-black fw-bold" href="">...</a></li>
+                            <li><a class="text-black fw-bold" href="">20</a></li>
+                            <li>
+                                <a class="text-black fw-bold" href=""><i class="fa-sharp fas fa-angle-right"
+                                        style="color: #e07282"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- End Account -->
+
+
+
+
+
+
+
+
+
+    <!-- Start Footer -->
+
+    <div class="footer py-4">
+        <div class="container d-flex align-items-center justify-content-between flex-column flex-md-row">
+            <p class="copyright mb-0 text-white">
+                Copyright &copy; oleaf.com All rights reserved
+            </p>
+            <ul class="social-media d-flex align-items-center gap-3 mt-3 mt-md-0">
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-tiktok" style="color: #ffffff"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- End Footer -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/oleaf.js"></script>
+
+</body>
+
+</html>
